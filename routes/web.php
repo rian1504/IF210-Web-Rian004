@@ -24,3 +24,6 @@ Route::get("product", [ListProductController::class, "index"]);
 
 // P8
 Route::get("listproduk", [ProdukController::class, "showProduk"]);
+
+// P9
+Route::post("listproduk", [ProdukController::class, "simpan"])->name("produk.simpan");
