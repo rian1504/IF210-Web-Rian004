@@ -27,3 +27,6 @@ Route::get("listproduk", [ProdukController::class, "showProduk"]);
 
 // P9
 Route::post("listproduk", [ProdukController::class, "simpan"])->name("produk.simpan");
+
+// P10
+Route::delete("listproduk/{id}", [ProdukController::class, "delete"])->name("produk.delete");
